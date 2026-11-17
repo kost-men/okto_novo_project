@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Учебный центр — АО «Ново-Широкинский рудник» | Группа ОКТО</title>
-  <meta name="description" content="Учебный центр АО «Ново-Широкинский рудник» (Группа ОКТО). Подготовка и переподготовка кадров для горнодобывающей промышленности.">
+  <title>Учебный центр — АO «Ново-Широкинский рудник» | Группа ОКТО</title>
+  <meta name="description" content="Учебный центр АO «Ново-Широкинский рудник» (Группа ОKTO). Подготовка и переподготовка кадров для горнодобывающей промышленности.">
+  <link rel="icon" href="img/icon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- ================= ШАПКА ================= -->
 <header class="header">
   <div class="container header__inner">
     <a href="#hero" class="header__logo">
@@ -28,7 +28,6 @@
   </div>
 </header>
 
-<!-- ================= 1. ГЛАВНАЯ (HERO) ================= -->
 <section class="hero" id="hero">
   <div class="container">
     <p class="hero__tag">Учебный центр АО «Ново-Широкинский рудник»</p>
@@ -45,14 +44,12 @@
   </div>
 </section>
 
-<!-- ================= 2. ПРОГРАММЫ (плейсхолдер) ================= -->
 <section class="section" id="programs">
   <div class="container">
     <h2 class="section__title">Программы обучения</h2>
     <p class="section__sub">Наименования и стоимость уточняются — сюда добавим список и прайс.</p>
 
     <div class="cards">
-      <!-- КАК ДОБАВИТЬ ПРОГРАММУ: скопируйте блок card и замените заголовок, текст и поля "Для кого / Формат / Длительность" -->
       <article class="card">
         <div class="card__icon">⛏</div>
         <h3 class="card__title">наименование 1</h3>
@@ -91,7 +88,6 @@
   </div>
 </section>
 
-<!-- ================= 3. О ЦЕНТРЕ ================= -->
 <section class="section section--alt" id="about">
   <div class="container about">
     <div class="about__logo">
@@ -117,7 +113,6 @@
   </div>
 </section>
 
-<!-- ================= 4. КАК ПРОХОДИТ ОБУЧЕНИЕ ================= -->
 <section class="section" id="steps">
   <div class="container">
     <h2 class="section__title">Как проходит обучение</h2>
@@ -131,12 +126,10 @@
   </div>
 </section>
 
-<!-- ================= 5. КОНТАКТЫ + ПОДВАЛ ================= -->
 <section class="section section--alt" id="contacts">
   <div class="container contacts">
     <div>
       <h2 class="section__title">Контакты</h2>
-      <!-- ЗАМЕНИТЬ: реальные контакты учебного центра -->
       <p>📞 Телефон: <a href="tel:+70000000000">+7 (000) 000-00-00</a></p>
       <p>✉ Почта: <a href="mailto:ucheba@example.ru">ucheba@example.ru</a></p>
       <p>📍 Адрес: Забайкальский край, с. Ново-Широкинский (уточняется)</p>
@@ -152,15 +145,12 @@
   </div>
 </footer>
 
-<!-- ================= ВСПЛЫВАЮЩЕЕ ОКНО ================= -->
 <div class="modal" id="modal" aria-hidden="true">
   <div class="modal__overlay" data-close-modal></div>
   <div class="modal__window" role="dialog" aria-modal="true">
     <button class="modal__close" data-close-modal aria-label="Закрыть">×</button>
     <h2>Связаться с нами</h2>
     <p class="modal__sub">Оставьте заявку — мы перезвоним и подберём программу.</p>
-    <!-- ВАРИАНТ 1 (сейчас): mailto — письмо просто уходит на почту центра.
-         ВАРИАНТ 2 (позже): вставьте сюда iframe Яндекс Формы вместо тега form. -->
     <form id="contact-form">
       <label>Имя<input type="text" name="name" required placeholder="Ваше имя"></label>
       <label>Телефон<input type="tel" name="phone" required placeholder="+7 ___ ___-__-__"></label>
