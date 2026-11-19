@@ -177,3 +177,31 @@ a{color:inherit}
 .course-item:focus::after {
   opacity: 1;
 }
+
+/* Разрешаем анимировать высоту до auto */
+:root {
+  interpolate-size: allow-keywords;
+}
+
+/* Плавное появление содержимого */
+details::details-content {
+  height: 0;
+  overflow: hidden;
+  transition:
+    height 0.35s ease,
+    opacity 0.35s ease,
+    content-visibility 0.35s ease allow-discrete;
+}
+
+details[open]::details-content {
+  height: auto;
+}
+
+/* Плавный поворот стрелочки */
+details summary::after {
+  transition: transform 0.3s ease;
+}
+
+details[open] summary::after {
+  transform: rotate(180deg);
+}
